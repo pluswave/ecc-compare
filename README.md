@@ -2,7 +2,7 @@ A comparation for different result for ECDSA and question demo.
 
 A signature with ecc (especially  secp256k1 ):
 
-   sign(message_hash, key) = signature
+    sign(message_hash, key) = signature
 
 may vary because of randomness. As of [RFC6979](https://tools.ietf.org/html/rfc6979) , the randomn process of generating K is replaced by deterministic process, which in turn, it will ALWAYS get SAME result with SAME message_hash and private key if using the SAME hash function. So this lead to two questions :
 
